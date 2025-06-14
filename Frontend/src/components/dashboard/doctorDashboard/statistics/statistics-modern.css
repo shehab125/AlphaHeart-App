@@ -1,0 +1,34 @@
+/* --- Modern Doctor Statistics --- */
+.statistics-modern {
+    background: #f8f9fa;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px #38638d11;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+.statistics-modern-box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #38638d22;
+    border: 2px solid #B7D8F8;
+    padding: 1.5rem 1rem;
+    transition: box-shadow 0.2s, border 0.2s;
+    margin-bottom: 1.5rem;
+}
+.statistics-modern-box:hover {
+    box-shadow: 0 4px 24px #38638d33;
+    border: 2px solid #38638D;
+}
+.statistics-modern-box h2, .statistics-modern-box h3, .statistics-modern-box h4 {
+    color: #38638D;
+    font-weight: 700;
+}
+@media (max-width: 900px) {
+    .statistics-modern {
+        padding: 0.5rem 0.2rem;
+    }
+    .statistics-modern-box {
+        padding: 0.7rem 0.3rem;
+    }
+} 

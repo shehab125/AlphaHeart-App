@@ -1,0 +1,43 @@
+.a-management-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.admin-card:hover {
+  transform: translateY(-2px);
+}
+
+.edit-form {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="email"] {
+  border: 1px solid #cbd5e1;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.edit-form input[type="text"]:focus,
+.edit-form input[type="email"]:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+} 

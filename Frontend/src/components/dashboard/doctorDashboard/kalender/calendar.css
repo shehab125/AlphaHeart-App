@@ -1,0 +1,98 @@
+/* --- Modern Doctor Calendar --- */
+.react-calendar2 {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    background: #F1F7FE;
+    color: #38638D;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #38638d22;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+    font-size: 1.2rem;
+    border: 2px solid #B7D8F8;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+.react-calendar__navigation button {
+    color: #38638D !important;
+    min-width: 44px;
+    background: #B7D8F8;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background: #38638D;
+    color: #fff !important;
+}
+.react-calendar__navigation button[disabled] {
+    background: #e0e7ef;
+    color: #b0b0b0 !important;
+}
+abbr[title] {
+    text-decoration: none;
+}
+.highlight {
+    color: #fa6d01;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background: #B7D8F8;
+    color: #38638D;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #38638d22;
+}
+.react-calendar__tile--now:enabled {
+    background: #38638D22;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #38638D;
+    border: 1.5px solid #38638D;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background: #B7D8F8;
+    color: #38638D;
+}
+.react-calendar__tile--active {
+    background: linear-gradient(90deg, #38638D 60%, #B7D8F8 100%);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 2px 8px #38638d22;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: #38638D;
+    color: #fff;
+}
+.react-calendar--selectRange .react-calendar2__tile--hover {
+    background-color: #B7D8F8;
+}
+.react-calendar__tile--range {
+    background: #eaf3fb;
+    color: #38638D;
+    border-radius: 0;
+}
+.react-calendar__tile--rangeStart {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #38638D;
+    color: #fff;
+}
+.react-calendar__tile--rangeEnd {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #38638D;
+    color: #fff;
+}

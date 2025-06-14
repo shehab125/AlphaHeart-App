@@ -1,0 +1,23 @@
+.a-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #38638D;
+    padding: 18px 80px 0 80px;
+    margin-bottom: -18px;
+}
+
+.d-header-img {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+.a-navbar-icons{
+    display: flex;
+    justify-content:flex-end;
+    gap: 20px;
+    align-items: center;
+    width: 90%;
+    padding-top: 10px;
+}

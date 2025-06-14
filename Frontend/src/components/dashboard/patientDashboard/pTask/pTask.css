@@ -1,0 +1,30 @@
+.task-main-add{
+    overflow-y: scroll;
+    height: 532px;
+    width: 680px;
+}
+
+.task-main-add::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+.task-main-add::-webkit-scrollbar-thumb {
+
+    background: #d9e4f0
+}
+
+@media (max-width: 900px) {
+  .task-main-add {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .task-main-add {
+    width: 100%;
+    height: 250px;
+    font-size: 14px;
+  }
+}
+

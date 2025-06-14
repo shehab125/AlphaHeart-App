@@ -1,0 +1,262 @@
+/* -------------------------------------------------------------------------- */
+/*                               the Admin Panel                              */
+/* -------------------------------------------------------------------------- */
+
+.apanel-p-view{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 26px;
+    overflow: scroll;
+    overflow-x: hidden; /* Hide horizontal scrollbar */;
+
+    height: 800px;
+
+}
+
+.apanel-p-view-patientInfo{
+    padding: 0 50px;
+}
+.apanel-p-main-patientOk {
+
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.apanel-p-main-left {
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    border-radius: 26px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.548);
+
+
+}
+
+.apanel-p-person {
+    /* display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px; */
+    height: 210vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.apanel-p-person-profile {
+
+    height: 70vh;
+    display: flex;
+    /* transform: translateY(-70vh); */
+}
+
+.apanel-p-person-profile2 {
+    height: 70vh;
+    display: flex;
+    transform: translateY(-70vh);
+}
+
+.apanel-p-person-profile3 {
+    height: 70vh;
+    display: flex;
+    transform: translateY(-140vh);
+}
+
+.apanel-p-person--left,
+.apanel-p-person--right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.apanel-p-person--left {
+
+    /* border-right: 6px solid #B7D8F8; */
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                            patient Approval Card                            */
+/* -------------------------------------------------------------------------- */
+
+.apanel-p-view-title ul {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    border-bottom: 1px solid #38638D;
+    width: 72%;
+    color: #38638D;
+    font-size: 1.2rem;
+}
+
+.apanel-p-view-patient {
+    display: flex;
+
+}
+
+.apanel-p-view-patient-left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+
+
+.apanel-p-view-patientInfo ul {
+    display: flex;
+    justify-content: center;
+    /* gap: 25px; */
+    width: 634px;
+    color: #38638D;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ced4db;
+    align-items: center;
+    height: 200px;
+    
+}
+
+.patientInfo1{
+    padding-left: 10px;
+    flex: 2;
+    margin-right: 50px;
+}
+
+.patientInfo1 span{
+    font-weight: bold;
+}
+.okIcons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 13px;
+}
+
+.okIconsFlex {
+
+    padding: 10px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 13px;
+ 
+    background-color: #F1F7FE;
+}
+
+.okIconsFlex img {
+    margin-top: -25px;
+}
+
+.okIconsFlex:hover {
+
+    cursor: pointer;
+    box-shadow: 0 0 20px #B7D8F8;
+}
+.okIconsFlex1:hover{
+    box-shadow: 0 0 10px rgb(241, 191, 24);
+    border: 1px solid #38638D;
+
+}
+.okIconsFlex2:hover{
+    box-shadow: 0 0 10px red;
+    border: 1px solid #38638D;
+
+}
+.okIconsFlex3:hover{
+    box-shadow: 0 0 10px rgb(32, 216, 216);
+
+
+}
+.apanel-p-view-patientImg {
+    margin-left: 20px;
+    width: 110px;
+}
+
+.patientInfo1 li {
+    /* border-bottom: 1px solid #38638D; */
+    box-shadow: 0 0 30px #38628d34;
+    border-right: 1px solid #38638D;
+    padding-left: 10px;
+}
+
+.apanel-p-view-patient-btn {
+    /* background-color: #38638D; */
+    background-color: #F1F7FE;
+    /* margin-top: -10px; */
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+
+}
+
+.apanel-p-view-patient-btn button {
+    border: 1px solid #38638D;
+
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+.apanel-p-view-patient-btn button:hover{
+    cursor: pointer;
+    background-color: #B7D8F8;
+
+}
+.apanel-p-view-patient-file {
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px solid #38638D;
+}
+
+
+.apanel-p-view-patient-info2 {
+    height: 200px;
+    padding: 10px;
+    background-color: #F1F7FE;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px solid #38638D;
+}
+
+.apanel-p-view-patient-info2 h1 {
+    margin-top: 10px;
+    color: #38638D;
+    font-weight: bold;
+}
+
+.apanel-p-view-patient-right-btn{
+
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    gap: 50px;
+    border-bottom: 1px solid #38638D;
+}
+.apanel-p-view-patientInfo-Ok{
+    height: 100px;
+    width: 100%;
+    gap: 10px;
+}    

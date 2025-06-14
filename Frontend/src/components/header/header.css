@@ -1,0 +1,356 @@
+@media (min-width: 1024px) {
+  .large-screen {
+    margin-left: -520px;
+  }
+  .button-right {
+    margin-left: -420px;
+  }
+  .center-ul {
+    gap: 60px;
+  }
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  width: 100%;
+  z-index: 999; /* Navbar'ın diğer içeriklerin üzerinde olmasını sağlar */
+  min-height: 120px;
+  box-shadow: 0 0 20px #1515165b;
+}
+
+/* Header Styles */
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #34a853;
+    --accent-color: #ea4335;
+    --light-color: #f8f9fa;
+    --dark-color: #202124;
+    --text-color: #3c4043;
+    --gradient-primary: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 16px rgba(0,0,0,0.15);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --transition: all 0.3s ease;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    transition: var(--transition);
+    z-index: 9999;
+    background: var(--gradient-primary);
+    min-height: 140px;
+}
+
+.navbar.scrolled {
+    background: white;
+    box-shadow: var(--shadow-sm);
+    min-height: 100px;
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link {
+    color: var(--dark-color);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.navbar-brand img {
+    transition: var(--transition);
+    max-height: 120px;
+    width: auto;
+}
+
+.navbar.scrolled .navbar-brand img {
+    filter: brightness(0.8);
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar.scrolled .nav-link::after {
+    background: var(--primary-color);
+}
+
+/* Glassmorphism Effect */
+.backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    text-transform: none;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary {
+    background: white;
+    border: none;
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--light-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.profile-button:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: var(--transition);
+    z-index: 10000;
+}
+
+.dropdown-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.dropdown-item {
+    padding: 0.8rem 1.5rem;
+    color: var(--text-color);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown-item:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: var(--gradient-primary);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-lg);
+    padding: 1rem;
+    z-index: 9998;
+}
+
+/* Add padding to body to prevent content from hiding under fixed header */
+body {
+    padding-top: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        min-height: 100px;
+    }
+    
+    .navbar-brand img {
+        height: 80px;
+    }
+    
+    .nav-link {
+        color: white;
+        padding: 0.8rem 1rem;
+        display: block;
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+    
+    .profile-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Smooth transitions */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+/* Button hover effects */
+.hover\:bg-main-dark-blue:hover {
+    background-color: var(--main-dark-blue);
+}
+
+.hover\:text-white:hover {
+    color: white;
+}
+
+/* Profile dropdown animation */
+.transform {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.-translate-y-2 {
+    transform: translateY(-0.5rem);
+}
+
+.translate-y-0 {
+    transform: translateY(0);
+}
+
+/* Mobile menu animation */
+.md\:hidden {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+.theme-toggle-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: var(--main-dark-blue);
+}
+
+.theme-toggle-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark .theme-toggle-btn {
+    color: var(--main-light-blue);
+}
+
+.dark .theme-toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

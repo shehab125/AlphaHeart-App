@@ -1,0 +1,122 @@
+/* Footer Styles */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 5rem 0 2rem;
+}
+
+.footer h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.footer h5::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.footer p, .footer li {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer hr {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.quick-links li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quick-links i {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-info i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 1rem;
+    }
+    
+    .footer h5 {
+        font-size: 1.2rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .quick-links, .contact-info {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,80 @@
+/* Modern Doctor Navbar Design */
+.d-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #38638D;
+    padding: 18px 40px 0 40px;
+    margin-bottom: -18px;
+    background: #fff;
+    box-shadow: 0 2px 12px #38638d11;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    min-height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.d-header-img {
+    height: 48px;
+    width: auto;
+    margin-right: 1.5rem;
+    filter: drop-shadow(0 2px 8px #38638d22);
+}
+.d-navbar-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    align-items: center;
+    width: auto;
+    padding-top: 0;
+}
+.d-navbar-icons img {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: #F1F7FE;
+    box-shadow: 0 2px 8px #38638d11;
+    padding: 6px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+.d-navbar-icons img:hover {
+    background: #B7D8F8;
+    box-shadow: 0 4px 16px #38638d22;
+    transform: translateY(-2px) scale(1.08);
+}
+.d-navbar-icons .relative {
+    position: relative;
+}
+.d-navbar-icons span {
+    background: #e74c3c;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 7px;
+    position: absolute;
+    top: -8px;
+    left: 18px;
+    box-shadow: 0 2px 8px #e74c3c33;
+    z-index: 2;
+}
+@media (max-width: 900px) {
+    .d-header {
+        padding: 10px 8px 0 8px;
+        min-height: 56px;
+    }
+    .d-header-img {
+        height: 32px;
+        margin-right: 0.5rem;
+    }
+    .d-navbar-icons img {
+        width: 24px;
+        height: 24px;
+        padding: 3px;
+    }
+    .d-navbar-icons {
+        gap: 12px;
+    }
+}

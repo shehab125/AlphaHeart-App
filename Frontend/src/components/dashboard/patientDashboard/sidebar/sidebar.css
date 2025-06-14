@@ -1,0 +1,141 @@
+.sidebar-main{
+    background-color: #38638D;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.topSlide{
+    flex:1.3;
+    /* border: 1px solid red; */
+    color: #B7D8F8;
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.sidebar-avatar-img{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+}
+.sidebar-avatar-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sidebar-avatar-name h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.middleSlide{
+    flex:3;
+    border-top: 1px solid #B7D8F8;
+    width: 100%;
+    margin: auto o;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+.bottomSlide{
+    flex:1.2;
+    border-top: 1px solid #B7D8F8;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+.mid, .bot{
+    display: flex;
+    color: #B7D8F8;
+    gap: 15px;
+    align-items: center;
+    margin-top:15px; 
+    padding-left: 25px;
+    height: 41px;
+}
+.mid:hover, .bot:hover{
+    background-color: #5999D7;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 41px;
+    /* border: 2px solid #5999D7; */
+    box-shadow: 0 0 10px #5999D7;
+}
+.bottom3{
+    margin-left: -9px;
+}
+.middle3 h1{
+    margin-left: 5px;
+}
+.middle4 h1{
+    margin-left: 2px;
+}
+.middle5 h1{
+
+    margin-left: 2px;
+}
+.middle6 h1{
+    margin-left: -5px;
+}
+.mid {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 10px;
+}
+.mid:hover {
+    background-color: #f5f5f5;
+}
+.mid.active {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+}
+.mid img {
+    width: 24px;
+    height: 24px;
+}
+.mid h1 {
+    font-size: 1rem;
+    color: #333;
+}
+.bottom1 {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 10px;
+    color: #dc3545;
+}
+.bottom1:hover {
+    background-color: #fff5f5;
+}
+.bottom1 img {
+    width: 24px;
+    height: 24px;
+}
+.bottom1 h1 {
+    font-size: 1rem;
+    color: #dc3545;
+}
+
