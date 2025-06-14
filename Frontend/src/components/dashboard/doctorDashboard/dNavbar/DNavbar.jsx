@@ -6,7 +6,7 @@ import notification2 from "../../../../assets/notification2.png";
 import help from "../../../../assets/help.png";
 import logo from "../../../../assets/logo3.png";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import useDataCall from "../../../../hooks/useDataCall";
 import DNotificationModal from "./DNotificationModal";
 import moment from "moment";
