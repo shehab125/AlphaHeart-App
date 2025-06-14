@@ -6,12 +6,6 @@ import appointmentsReducer from "../redux/actions/appointmentsActions";
 import storage from "redux-persist/lib/storage" //? default : localStorage
 import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist"
 
-const persistConfig = {
-    key: "root",
-    storage,
-    whitelist: ['auth'] // Only persist auth state
-}
-
 // Create a separate persist config for auth
 const authPersistConfig = {
     key: "auth",

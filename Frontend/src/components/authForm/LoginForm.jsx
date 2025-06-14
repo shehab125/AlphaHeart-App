@@ -110,7 +110,7 @@ const LoginForm = () => {
 
             <div className="flex justify-center items-center mb-4 mt-4 font-bold">
                 <a
-                  href="#"
+                  href="javascript:void(0)"
                   className={`px-4 py-2 rounded-l-xl hover:cursor-default bg-[#5999D7] text-white font-bold h-[50px] flex items-center `}
                 >
                   Register Now
@@ -145,7 +145,7 @@ const LoginForm = () => {
                 </a>
                 </div>
                 <a
-                  href="#"
+                  href="javascript:void(0)"
                   className={`px-4 py-2 rounded-r-xl hover:cursor-default bg-[#5999D7] text-white font-bold h-[50px] flex items-center `}
                 >
  
