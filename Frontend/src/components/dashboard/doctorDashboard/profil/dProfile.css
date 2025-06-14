@@ -10,7 +10,7 @@
     overflow-y: auto;
     min-height: unset;
     height: unset;
-    margin: 0;
+    margin-top: 100px;
 }
 
 .d-profile-panel-person-main::-webkit-scrollbar {
