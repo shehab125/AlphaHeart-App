@@ -5,7 +5,7 @@
   "description": "Doctor Appointment System",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
+    "start": "node index.js",
     "debug": "DEBUG=* nodemon"
   },
   "keywords": [],
