@@ -834,3 +834,4 @@
 127.0.0.1 - - [14/Jun/2025:08:01:46 +0000] "GET /img/0269325dc8ba7eb.jpg HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 127.0.0.1 - - [14/Jun/2025:08:02:17 +0000] "GET /api/doctors/68405354ec64ea9cc6213095 HTTP/1.1" 200 7115 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 127.0.0.1 - - [14/Jun/2025:08:02:57 +0000] "GET /api/doctors/68405354ec64ea9cc6213095 HTTP/1.1" 200 7115 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [14/Jun/2025:08:03:50 +0000] "GET /api/doctors/68405354ec64ea9cc6213095 HTTP/1.1" 200 7115 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
