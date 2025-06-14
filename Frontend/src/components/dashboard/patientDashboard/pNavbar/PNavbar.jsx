@@ -5,7 +5,7 @@ import letter from "../../../../assets/letter.png"
 import notification2 from "../../../../assets/notification2.png"
 import help from "../../../../assets/help.png"
 import logo from "../../../../assets/logo3.png"
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 import NotificationModal from "./NotificationModal";
 import moment from "moment";
 
