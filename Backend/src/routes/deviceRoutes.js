@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const DeviceMeasurement = require('../models/DeviceMeasurement');
-const Patient = require('../models/Patient');
+const Patient = require('../models/patient');
 
 // Middleware to verify device authentication
 const verifyDevice = async (req, res, next) => {
